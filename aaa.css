@@ -1,0 +1,80 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(253, 253, 255); /* Dégradé de noir à blanc en arrière-plan */
+    color: #333; /* Couleur du texte principale */
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    position: relative;
+    left: 55px;
+    right: 10px;
+}
+header {
+    background-color: #01070e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style pour le message "Prenez rendez-vous !" */
+h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #0073e6;
+}
+
+
+.image
+{
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    position: absolute;
+}
+
+/* Liens stylisés */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

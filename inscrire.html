@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0073e6, #eeeff0);
+            color: white;
+            text-align: center;
+        }
+        #animationText {
+            animation: scrollText 5s linear infinite;
+        }
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #00050a; /* Ajout d'une bordure */
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #00050a;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="animationText" >Sen Wergu Yaram souniou Yitee</h1>
+    <form id="pik"  action="aaa.html" target="_blank">
+        <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+        <input type="text" name="username" placeholder="Nom" required>
+        <input type="text" name="username" placeholder="Prenom" required>
+        <input type="email" name="mail" placeholder="Adresse mail" required>
+        <input type="date" name="birth" placeholder="Date de naissance">
+        <input type="password" name="password" placeholder="Mot de passe">
+        <input type="password" name="confirm_password" placeholder="Confirmez le mot de passe">
+        <button type="submit" >S'inscrire</button>
+    </form>
+
+    <form id="login-form" action="aaa.html" target="_blank">
+        <input type="text" name="username" placeholder="Nom d'utilisateur">
+        <input type="password" name="password" placeholder="Mot de passe">
+        <button type="submit">Se connecter</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("photo_2023-10-11_21-15-35.jpg");
+    margin: 0;
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.gr{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#ser {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#but {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.res {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+}
+
+#list li {
+    margin: 10px 0;
+}
+
+#list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}

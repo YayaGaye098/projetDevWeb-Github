@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <title>administrateurs</title>
+</head>
+<body>
+  <header>
+    <h1>Tableau de Bord Administratif</h1>
+    <nav>
+        <ul>
+            <li><a href="#gestion_utilisateurs">Gestion des Utilisateurs</a></li>
+            <li><a href="#gestion_prestataires">Gestion des Prestataires</a></li>
+            <li><a href="#gestion_reservations">Gestion des Réservations</a></li>
+            <li><a href="#resolution_problemes">Résolution des Problèmes</a></li>
+        </ul>
+    </nav>
+    
+        
+    <table id="dashboard">
+      <tr>
+        <th>Usagers</th>
+        <th>Prestations</th> 
+        <th>Réservations</th>
+        <th>Problèmes</th>
+      </tr>
+    </table>
+
+  </header>
+
+  <header>
+    <h1>Gestions des Reservations</h1>
+</header>
+
+<div class="gr">
+    <table>
+        <tr>
+            <th>ID Réservation</th>
+            <th>Nom du client</th>
+            <th>Date de Réservation</th>
+            <th>Statu</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>19</td>
+            <td>Maguette Ngom</td>
+            <td>2023-10-13</td>
+            <td>En Attente</td>
+
+            <td class="action">
+                <button class="button">confirmer</button>
+                <button class="button">Refuser</button>
+            </td>
+        </tr>
+
+        <tr>
+            <th>ID Réservation</th>
+            <th>Nom du client</th>
+            <th>Date de Réservation</th>
+            <th>Statu</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>92</td>
+            <td>Pape Wally Guissé</td>
+            <td>2023-10-13</td>
+            <td>En Attente</td>
+
+            <td class="action">
+                <button class="button">confirmer</button>
+                <button class="button">Refuser</button>
+            </td>
+        </tr>
+
+        <tr>
+            <th>ID Réservation</th>
+            <th>Nom du client</th>
+            <th>Date de Réservation</th>
+            <th>Statu</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>77</td>
+            <td>Yaya Gaye</td>
+            <td>2023-10-10</td>
+            <td>En Attente</td>
+
+            <td class="action">
+                <button class="button" type="submit">confirmer</button>
+                <button class="button">Refuser</button>
+            </td>
+        </tr>
+
+        <tr>
+            <th>ID Réservation</th>
+            <th>Nom du client</th>
+            <th>Date de Réservation</th>
+            <th>Statu</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>124</td>
+            <td>Alpha</td>
+            <td>2023-10-07</td>
+            <td>En Attente</td>
+
+            <td class="action">
+                <button class="button" type="submit">confirmer</button>
+                <button class="button">Refuser</button>
+            </td>
+        </tr>
+
+        <tr>
+            <th>ID Réservation</th>
+            <th>Nom du client</th>
+            <th>Date de Réservation</th>
+            <th>Statu</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>70</td>
+            <td>Fatima Sow</td>
+            <td>2023-10-01</td>
+            <td>En Attente</td>
+
+            <td class="action">
+                <button class="button">confirmer</button>
+                <button class="button">Refuser</button>
+            </td>
+        </tr>
+
+        <tr>
+            <th>ID Réservation</th>
+            <th>Nom du client</th>
+            <th>Date de Réservation</th>
+            <th>Statu</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>82</td>
+            <td>Alpha Ba</td>
+            <td>2023-10-13</td>
+            <td>En Attente</td>
+
+            <td class="action">
+                <button class="button">confirmer</button>
+                <button class="button">Refuser</button>
+            </td>
+        </tr>
+
+
+    </table>
+</div>
+    
+
+ <h1>Gestion des Utilisateurs</h1>
+    <div id="user-list">
+        <!-- Liste des utilisateurs -->
+    </div>
+    <button id="add-user-button">Ajouter un Utilisateur</button>
+    <div id="user-modal" class="modal">
+        <div class="modal-content">
+            <!-- Formulaire d'édition d'utilisateur -->
+        </div>
+    </div>
+
+    <h1>Gestion des Contenus</h1>
+    <div id="content-list">
+        <div class="content-section">
+            <h2>Articles de Contenu Statistique</h2>
+            <ul>
+                <li><a href="#">Statistique 1</a></li>
+                <li><a href="#">Statistique 2</a></li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h2>Pages d'Aide</h2>
+            <ul>
+                <li><a href="#">Aide 1</a></li>
+                <li><a href="#">Aide 2</a></li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h2>FAQ (Foire aux Questions)</h2>
+            <ul>
+                <li><a href="#">FAQ 1</a></li>
+                <li><a href="#">FAQ 2</a></li>
+            </ul>
+        </div>
+    </div>
+   
+  
+
+    <h1>Gestion des Commentaires et Avis</h1>
+    <div id="comments">
+        <div class="comment">
+            <p><strong>Utilisateur 1:</strong> C'est un excellent produit!</p>
+            <div class="comment-actions">
+                <button class="approve">Approuver</button>
+                <button class="delete">Supprimer</button>
+            </div>
+        </div>
+        <div class="comment">
+            <p><strong>Utilisateur 2:</strong> Pas satisfait du tout...</p>
+            <div class="comment-actions">
+                <button class="approve">Approuver</button>
+                <button class="delete">Supprimer</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="admin.js"></script>
+</body>
+</html>

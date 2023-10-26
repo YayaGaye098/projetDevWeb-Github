@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d'accueil</title>
+  <style>
+    .tp {
+      background-image: url(photo_2023-10-11_21-16-15.jpg);
+      margin: 0;
+      background-size: 100%;
+      text-align: left;
+    }
+
+    h1 {
+      animation: slideIn 10s linear infinite;
+    }
+    
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(73, 91, 192);
+      color: black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="tp">
+  <fieldset>
+    <header>
+      <h1>Dal len akk Jam</h1>
+    </header>
+  </fieldset>
+ 
+  <div class="container1">
+    <nav>
+      <ul>
+        <li><a href="aaa.html" target="_blank">Visiteurs</a></li>
+        <li><a href="accueilMedecin.html" target="_blank">Medecin</a></li>
+        <li><a href="administrateurs.html" target="_blank">Administrateurs</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Application de Réservation en Ligne</p>
+  </footer>
+</body>
+</html>

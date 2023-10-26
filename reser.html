@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de service</title>
+    <style>
+        body {
+            background-image:  url('reservation.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .reservation-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form class="reservation-form">
+        <label for="service">Service:</label>
+        <input type="text" id="service" name="service" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Heure:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="guests">Nombre de personnes:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+
+        <button type="submit">Réserver</button>
+    </form>
+
+    <script>
+        const form = document.querySelector('.reservation-form');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const guests = document.getElementById('guests').value;
+
+            console.log(`Service: ${service}, Date: ${date}, Heure: ${time}, Nombre de personnes: ${guests}`);
+
+            // Ici, vous pouvez ajouter votre code pour enregistrer les informations de réservation dans votre base de données
+        });
+    </script>
+</body>
+</html>

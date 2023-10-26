@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Paiement en Ligne</title>
+<style>
+ 
+ body
+ {
+  background-image:  url('cc.jpg');
+ }
+ h1
+ {
+  text-align: center;
+ }
+</style>
+</head>
+<body>
+  <h1>Payer en ligne en toute securité</h1>
+<h2>Paiement en Ligne</h2>
+
+<form action="/charge" method="post" id="payment-form">
+ <div class="form-row">
+    <label for="card-element">
+      Carte de crédit ou de débit
+    </label>
+    <div id="card-element">
+      <!-- Zone de saisie des informations de la carte bancaire -->
+    </div>
+ </div>
+
+ <button type="submit">Payer</button>
+</form>
+
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+ // Configuration de Stripe.js et de l'élément de paiement
+ var stripe = Stripe('votre_clé_publique_stripe');
+ var elements = stripe.elements();
+ var cardElement = elements.create('card');
+ cardElement.mount('#card-element');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="medecin.css">
+    <title>Médecin</title>
+</head>
+<body>
+    <!-- Section d'Inscription Prestataire de Services -->
+    <section>
+        <h1>Inscription Prestataire de Services</h1>
+        <form action="traitement_inscription.php" method="post">
+            <label for="nom_structure">Nom de la Structure :</label>
+            <input type="text" id="nom_structure" name="nom_structure" required>
+            
+            <label for="services_offerts">Services Offerts :</label>
+            <input type="text" id="services_offerts" name="services_offerts" required>
+
+            <label for="horaires">Horaires :</label>
+            <input type="text" id="horaires" name="horaires" required>
+
+            <input type="submit" value="S'inscrire">
+        </form>
+    </section>
+
+    <!-- Section de Gestion des Réservations -->
+    <section>
+        <header>
+            <h1>Gestion des Réservations</h1>
+        </header>
+        <div class="gr">
+            <table>
+                <tr>
+                    <th>ID Réservation</th>
+                    <th>Nom du client</th>
+                    <th>Date de Réservation</th>
+                    <th>Statut</th>
+                    <th>Actions</th>
+                </tr>
+
+                <tr>
+                    <td>19</td>
+                    <td>Maguette Ngom</td>
+                    <td>2023-10-13</td>
+                    <td>En Attente</td>
+    
+                    <td class="action">
+                        <button class="button">confirmer</button>
+                        <button class="button">Refuser</button>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>ID Réservation</th>
+                    <th>Nom du client</th>
+                    <th>Date de Réservation</th>
+                    <th>Statu</th>
+                    <th>Actions</th>
+                </tr>
+    
+                <tr>
+                    <td>92</td>
+                    <td>Pape Wally Guissé</td>
+                    <td>2023-10-13</td>
+                    <td>En Attente</td>
+    
+                    <td class="action">
+                        <button class="button">confirmer</button>
+                        <button class="button">Refuser</button>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>ID Réservation</th>
+                    <th>Nom du client</th>
+                    <th>Date de Réservation</th>
+                    <th>Statu</th>
+                    <th>Actions</th>
+                </tr>
+    
+                <tr>
+                    <td>77</td>
+                    <td>Yaya Gaye</td>
+                    <td>2023-10-10</td>
+                    <td>En Attente</td>
+    
+                    <td class="action">
+                        <button class="button">confirmer</button>
+                        <button class="button">Refuser</button>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>ID Réservation</th>
+                    <th>Nom du client</th>
+                    <th>Date de Réservation</th>
+                    <th>Statu</th>
+                    <th>Actions</th>
+                </tr>
+    
+                <tr>
+                    <td>124</td>
+                    <td>Alpha</td>
+                    <td>2023-10-07</td>
+                    <td>En Attente</td>
+    
+                    <td class="action">
+                        <button class="button">confirmer</button>
+                        <button class="button">Refuser</button>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>ID Réservation</th>
+                    <th>Nom du client</th>
+                    <th>Date de Réservation</th>
+                    <th>Statu</th>
+                    <th>Actions</th>
+                </tr>
+    
+                <tr>
+                    <td>70</td>
+                    <td>Fatima Sow</td>
+                    <td>2023-10-01</td>
+                    <td>En Attente</td>
+    
+                    <td class="action">
+                        <button class="button">confirmer</button>
+                        <button class="button">Refuser</button>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <th>ID Réservation</th>
+                    <th>Nom du client</th>
+                    <th>Date de Réservation</th>
+                    <th>Statu</th>
+                    <th>Actions</th>
+                </tr>
+    
+                <tr>
+                    <td>82</td>
+                    <td>Alpha Ba</td>
+                    <td>2023-10-13</td>
+                    <td>En Attente</td>
+    
+                    <td class="action">
+                        <button class="button">confirmer</button>
+                        <button class="button">Refuser</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+
+    <!-- Section de Gestion de la Disponibilité -->
+    <section>
+        <h1>Gestion de la Disponibilité</h1>
+        <form action="traitement_disponibilite.php" method="post">
+            <label for="service">Service :</label>
+            <select id="service" name="service" required>
+                <option value="service1">Service 1</option>
+                <option value="service2">Service 2</option>
+                <option value="service3">Service 3</option>
+            </select>
+        
+            <label for="plage_horaire">Plage Horaire :</label>
+            <input type="text" id="plage_horaire" name="plage_horaire" required>
+
+            <input type="submit" value="Enregistrer Disponibilité">
+        </form>
+    </section>
+
+    <!-- Section Prestation de Services -->
+    <section>
+        <h1>Prestation de Services</h1>
+        <div class="service-info">
+            <h2>Nom du Service</h2>
+            <p>Description du service, informations, etc.</p>
+            <h3>Horaires :</h3>
+            <ul>
+                <li>Lundi : 9h00 - 18h00</li>
+                <li>Mardi : 9h00 - 18h00</li>
+                <li>Mercredi : Fermé</li>
+                <li>Jeudi : 9h00 - 18h00</li>
+                <li>Vendredi : 9h00 - 18h00</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section de Notifications -->
+    <section>
+        <form action="administrateurs.html" target="_blank">
+            <fieldset>
+                <legend>Notification</legend>
+                <p><a href="mailto:yayagaye216@gmail.com">Envoyer un mail</a></p>
+                <button>Envoyer</button>
+                <button>Modifier</button>
+                <button>Annuler</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Section de Statistiques -->
+    <section>
+        <h1>Statistiques Prestataire de Services</h1>
+        <div class="stats">
+            <div class="stat">
+                <h2>Réservations</h2>
+                <p>Total : 100</p>
+            </div>
+            <div class="stat">
+                <h2>Taux d'Occupation</h2>
+                <p>70%</p>
+            </div>
+            <div class="stat">
+                <h2>Évaluations Clients</h2>
+                <p>Moyenne : 4.5 / 5</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="medecin.js"></script>
+</body>
+</html>

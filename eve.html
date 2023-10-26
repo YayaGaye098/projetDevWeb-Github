@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'avis et d'évaluations</title>
+    <link rel="stylesheet" href="eve.css">
+</head>
+<body>
+    <h1>Laissez un avis et une évaluation</h1>
+    <form id="feedback-form">
+        <div class="form-element">
+            <label for="feedback">Votre avis :</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+        </div>
+        <div class="form-element">
+            <label for="rating">Votre note (sur 5) :</label>
+            <input id="rating" type="number" name="rating" min="1" max="5" required>
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+    <br>
+    <script src="eve.js"></script>
+</body>
+</html>

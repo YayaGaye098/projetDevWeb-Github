@@ -1,0 +1,49 @@
+*{
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type = text],input[type = password],input[type = email],input[type = button]{
+    width: 30%;
+    border-width: 5px;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: none;
+
+}
+
+body
+{
+    background-image: url(photo_2023-10-11_21-16-10.jpg);
+    margin: 0px;
+    background-size: 100px;
+}
+.tp1
+{
+    
+    margin: 0px;
+    background-size: 100%;
+}
+
+.tp1
+{
+    text-align: center;
+}
+
+
+footer{
+    position: unset;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+

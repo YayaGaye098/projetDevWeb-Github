@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier de Disponibilité</title>
+    <link rel="stylesheet" href="ccx.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calendrier de Disponibilité</h1>
+        <form id="form">
+            <div>
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                    <option value="">-- Sélectionnez un service --</option>
+                    <option value="Retrait Wave">Retrait Wave</option>
+                    <option value="Restaurant">Restaurant</option>
+                    <option value="Pharmacie">Pharmacie</option>
+                    <option value="Consultation">Consultation</option>
+                    <option value="Orange Money">Orange Money</option>
+                </select>
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div>
+                <label for="time">Heure</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+    <script src="ccx.js"></script>
+</body>
+</html>
